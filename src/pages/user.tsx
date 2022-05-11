@@ -1,9 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { UsersView } from "views/users";
-import { CollectionsView } from "../views/collections/index";
+import { UsersView } from "../views/users/index";
 
-const Collections: NextPage = (props) => {
+const Users: NextPage = (props) => {
   return (
     <div>
       <Head>
@@ -13,10 +12,9 @@ const Collections: NextPage = (props) => {
           content="Basic Functionality"
         />
       </Head>
-      <CollectionsView />
-      <UsersView/>
+      <UsersView />
     </div>
   );
 };
 
-export default Collections;
+export default Users;
